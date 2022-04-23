@@ -1,0 +1,25 @@
+Host raspian
+  HostName 192.168.86.227
+  Port 22
+  User pi
+	IdentityFile C:/Users/bdsta/.ssh/id_ecdsa
+	IdentitiesOnly yes
+	
+Host truenas
+  HostName 192.168.86.109
+  Port 22
+  User root
+  IdentityFile /home/kali/.ssh/id_ed25519
+  IdentitiesOnly yes
+
+Host wintruenas
+  HostName 192.168.86.109
+  Port 22
+  User root
+  IdentityFile C:/Users/bdsta/.ssh/id_ecdsa
+  IdentitiesOnly yes
+
+Host *
+  Port 22
+  IdentityFile C:/Users/bdsta/.ssh/id_ecdsa
+  IdentitiesOnly yes
