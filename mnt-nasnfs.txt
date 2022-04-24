@@ -1,0 +1,12 @@
+# 
+# must have nfs not just ntfs in /sbin/mount
+ ll -a /sbin/mount* 
+
+ sudo mkdir /mnt/nasnfs
+ sudo apt-get install libnfs-utils
+
+# above for nfs-common
+
+
+# -vt verbal ; -vtf verbal dont finish fake run
+sudo mount -vt nfs 192.168.86.109:/mnt/PoolmyZFS/usespace /mnt/nasnfs
