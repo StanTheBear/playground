@@ -196,3 +196,4 @@ zplug load
 # set up default enhancd filter
 ENHANCD_FILTER=fzf:peco; export ENHANCD_FILTER
 # ~/enhancd/init.sh
+# use if no zplug: curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
