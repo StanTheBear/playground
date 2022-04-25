@@ -1,5 +1,5 @@
-[url "ssh://git@github.com/"]
+# [url "ssh://git@github.com:StanTheBear/playground.git"]
 
-# [user]
-#	name = StanTheBear
-#	email = bdstaniforth@gmail.com
+[user]
+	name = StanTheBear
+	email = bdstaniforth@gmail.com
