@@ -20,6 +20,8 @@ Host wintruenas
   IdentitiesOnly yes
 
 Host *
+  AddKeysToAgent yes
   Port 22
-  IdentityFile C:/Users/bdsta/.ssh/id_ecdsa
+  IdentityFile ~/.ssh/id_ecdsa
   IdentitiesOnly yes
+
