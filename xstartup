@@ -1,0 +1,36 @@
+#!/bin/sh
+
+#
+# this file is copied from /usr/lib/win-kex/xstartup
+# change kex startup shell
+#
+#############################
+##          All            ##
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+export SHELL=/usr/bin/zsh
+export XDG_SESSION_TYPE=x11
+export GDK_BACKEND=x11
+
+#############################
+##          Gnome          ##
+#[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+#[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+#vncconfig -iconic &
+#dbus-launch --exit-with-session gnome-session &
+
+
+############################
+##           LXQT         ##
+####exec openbox-session
+#exec startlxqt
+
+
+############################
+##          KDE           ##
+#exec /usr/bin/startkde
+
+
+############################
+##          XFCE          ##
+startxfce4
