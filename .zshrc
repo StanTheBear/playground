@@ -9,7 +9,7 @@ fi
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # fix WSL2 XDISPLAY Route IP
-export DISPLAY=$(cd /mnt/c | route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+# export DISPLAY=$(cd /mnt/c | route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
 
 # # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
