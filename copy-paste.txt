@@ -1,0 +1,10 @@
+On WSL2 kali linux & TMUX copy paste buffers
+
+1. local X linux buffer works when text highlighted in yellow with mouse drag or v ... y or CTL Shft C
+
+2. above local copy can be pasted with p in NVIM or middle mouse click
+
+3. System buffer(windows as well) copy to by text select by hold Shft key drag over text then CTL Shft C or Edit menu copy or rt click in Konsole
+
+4. System & Win buffer paste by CTL Shft V or middle mouse click in linux
+
