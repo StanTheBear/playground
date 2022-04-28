@@ -1,4 +1,4 @@
-# [url "ssh://git@github.com:StanTheBear/playground.git"]
+# [url "ssh://git@github.com:StanTheBear/playground.git" or git]
 [core]
 	editor = nvim
 
