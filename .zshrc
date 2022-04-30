@@ -10,7 +10,8 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 # fix WSL2 XDISPLAY Route IP
 # export DISPLAY=$(cd /mnt/c | route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
-export DISPLAY=$(ps aux | grep Xtigervnc | head -1 | sed -nE 's/^.*Xtigervnc (:[0-9]+).*/\1/p') 
+
+export DISPLAY=$(ps aux | grep Xtigervnc | head -1 | sed -nE 's/^.*Xtigervnc (:[0-9]+).*$/\1/p')
 
 # # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -97,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_GB.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -129,7 +130,7 @@ export PATH=/home/kali/anaconda3/bin:$PATH
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #
 #
-
+export DISPLAY=:0 #  .0
 # export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
 export LIBGL_ALWAYS_INDIRECT=0
 
